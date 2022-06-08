@@ -6,11 +6,11 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav class={styles.navbar}>
+    <nav className={styles.navbar}>
       <NavLink to="/" className={styles.brand}>
         Mini <span>Blog</span>
       </NavLink>
-      <ul class={styles.links_list}>
+      <ul className={styles.links_list}>
         <li>
           <NavLink to="/" className={({ isActive }) => ( isActive ? styles.active : "")}>
             Home
