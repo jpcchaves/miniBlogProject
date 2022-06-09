@@ -87,6 +87,6 @@ export const useAuthentication = () => {
     createUser,
     error,
     loading,
-    logout, 
+    logout,
   };
 };
