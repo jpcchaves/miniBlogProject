@@ -8,7 +8,7 @@ const initialState = {
 };
 
 const insertReducer = (state, action) => {
-  switch (action) {
+  switch (action.type) {
     case "LOADING":
       return { loading: true, error: null };
     case "INSERTED_DOC":
@@ -20,7 +20,7 @@ const insertReducer = (state, action) => {
   }
 };
 
-export const useIsertDocument = (docCollection) => {
+export const useInsertDocument = (docCollection) => {
   const [response, dispatch] = useReducer(insertReducer, initialState);
 
   // deal with memory leak
@@ -28,7 +28,7 @@ export const useIsertDocument = (docCollection) => {
 
   const checkCancelBeforeDispatch = (action) => {
     if (!cancelled) {
-      dispatch;
+      dispatch(action);
     }
   };
 
@@ -57,7 +57,7 @@ export const useIsertDocument = (docCollection) => {
   };
 
   useEffect(() => {
-    setCancelled(true);
+    return () => setCancelled(true);
   }, []);
 
   return {
