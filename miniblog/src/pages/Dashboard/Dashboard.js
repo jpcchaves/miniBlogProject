@@ -19,7 +19,7 @@ const Dashboard = () => {
   
   // delete doc
   const {deleteDocument} = useDeleteDocument("posts")
-  
+
   if(loading) {
     return <p>Carregando....</p>
   }
@@ -49,7 +49,7 @@ const Dashboard = () => {
                   Ver
                 </Link>
                 <Link
-                  to={` /posts/edit/${post.id}`}
+                  to={`/posts/edit/${post.id}`}
                   className="btn btn-outline"
                 >
                   Editar
