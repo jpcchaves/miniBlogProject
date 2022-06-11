@@ -1,12 +1,11 @@
 // CSS Modules import
 import styles from "./Home.module.css";
-
 // Hooks
 import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
 import { useFetchDocuments } from "../../hooks/useFetchDocuments";
-
 // components
+import PostDetail from "../../components/PostDetail";
 
 const Home = () => {
   const [query, setQuery] = useState("");
@@ -29,7 +28,7 @@ const Home = () => {
       </form>
       <div>
         {loading && <p>Carregando.....</p>}
-        {posts && posts.map((post) => <h3>{post.title}</h3>)}
+        {posts && posts.map((post) => <PostDetail key={post.id} post={post} />)}
         {posts && posts.length === 0 && (
           <div className={styles.noposts}>
             <p>Não foram encontrados posts</p>
