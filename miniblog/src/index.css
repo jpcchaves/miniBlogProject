@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #f6fcff;
   padding: 0;
   margin: 0;
@@ -6,9 +6,8 @@ body{
 }
 
 input::placeholder,
-textarea::placeholder{
+textarea::placeholder {
   font-family: "Montserrat", sans-serif;
-  color: #AAA;
 }
 
 input:focus,
@@ -22,24 +21,22 @@ nav button {
   background-color: transparent;
   border: none;
   color: #000;
-  transform: .4s;
+  transition: 0.4s;
   font-size: 1em;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-seri;
 }
 
 a:hover,
-nav button:hover{
+nav button:hover {
   color: #bbb;
 }
 
-/* Global form styles */
-
+/* form styles */
 form {
   max-width: 40%;
   margin: 0 auto;
 }
-
 
 label {
   display: flex;
@@ -47,23 +44,25 @@ label {
   margin-bottom: 1em;
 }
 
-
 label span {
-  margin-bottom: .3em;
-  font-weight: bolder;
+  margin-bottom: 0.3em;
+  font-weight: bold;
   text-align: left;
 }
 
 input,
-textarea{
-  resize: none;
+textarea {
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #ccc;
-  padding: .8em 0;
+  padding: 0.8em 0em;
+  background-color: transparent;
 }
 
-/* buttons */
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
 
 .btn {
   background-color: #1a8918;
@@ -96,19 +95,17 @@ textarea{
   color: #fff;
 }
 
-.btn.btn.btn-outline:hover{
+.btn.btn-outline:hover {
   background-color: #000;
 }
 
-.btn.btn-danger:hover{
+.btn.btn-danger:hover {
   background-color: #dc3545;
 }
 
-button[disabled]{
+button[disabled] {
   background-color: #aaa;
 }
-
-/* Error message */
 
 .container .error {
   color: #721c24;
