@@ -58,7 +58,7 @@ const Navbar = () => {
                 to="/posts/create"
                 className={({ isActive }) => (isActive ? styles.active : "")}
               >
-                Novo post
+                Novo
               </NavLink>
             </li>
             <li>
@@ -81,7 +81,7 @@ const Navbar = () => {
         </li>
         {user && (
           <li>
-            <button onClick={logout}>Sair</button>
+            <button onClick={logout} className={styles.logoutbtn}>Sair</button>
           </li>
         )}
       </ul>
