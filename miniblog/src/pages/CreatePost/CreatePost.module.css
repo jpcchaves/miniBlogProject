@@ -9,3 +9,14 @@
 .create_post p {
     color: #AAA;
 }
+
+@media(max-width: 768px){
+    .create_post h2 {
+        font-size: 1.8em;
+    }
+    .create_post p {
+        width: 80%;
+        margin: 2em auto;
+        color: #AAA;
+    }
+}
