@@ -33,3 +33,20 @@
     color: #fcfcfc;
     border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+
+    .navbar{
+        padding: .5em 1em;
+    }
+
+    .links_list {
+        margin-right: 0;
+    }
+
+    .links_list li a {
+        font-size: .6em;
+    }
+    
+}
+

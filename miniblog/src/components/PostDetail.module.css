@@ -16,6 +16,7 @@
 .post_detail .tags {
   margin-bottom: 1.2em;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tags p {
