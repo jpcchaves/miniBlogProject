@@ -1,9 +1,12 @@
 .post_detail {
-  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 2em auto;
+  width: 70%;
 }
 
 .post_detail img {
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .post_detail h2 {
