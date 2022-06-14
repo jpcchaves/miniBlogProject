@@ -5,4 +5,11 @@
     align-items: center;
     justify-content: center;
     background-color: #edf3f6;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .footer h3{
+        width: 70%;
+    }
 }
